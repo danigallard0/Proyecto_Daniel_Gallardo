@@ -30,9 +30,18 @@
     </header>
     <nav>
       <ul>
-        <li name="quienes_somos">¿Quíenes somos?</li>
-        <li name="experiencias">Experiencias</li>
-        <li name="hazte_socio">Hazte SOCIO</li>
+        <li name="quienes_somos">
+          ¿Quíenes somos?
+          <a id="quienes_somos"></a>
+        </li>
+        <li name="experiencias" id="experiencias">
+          Experiencias
+          <a id="experiencias"></a>
+        </li>
+        <li name="hazte_socio" id="hazte_socio">
+          Hazte SOCIO
+          <a id="hazte_socio"></a>
+        </li>
       </ul>
       <input type="search" placeholder="Buscar" />
     </nav>
@@ -44,8 +53,8 @@
         height="800"
       />
       <div class="content">
-        <div style="background-color: white" class="quienes_somos">
-          <h3>¿Quíenes somos?</h3>
+        <div style="background-color: white" id="quienes_somos">
+          <h3>¿QUIENES SOMOS?</h3>
           <p
             style="
               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
@@ -59,8 +68,8 @@
             Bernabeu, como a otros estadios de otros equipos de fútbol.
           </p>
         </div>
-        <div style="background-color: white">
-          <h3>Experiencias</h3>
+        <div style="background-color: white" id="experiencias">
+          <h3>EXPERIENCIAS</h3>
           <p>
             Hemos realizado varios viajes al Estadio Santiago Bernabeu para
             disfrutar de algunos partidos de fútbol, al igual que el año pasado
@@ -70,40 +79,140 @@
             entre todos los socios de la peña para poder disfrutar juntos de
             nuestro Real Madrid.
           </p>
-          <img
-            src="assets/images/santiago-bernabeu-elegido-como-mejor-estadio-mundo_98.webp"
-            alt="Partido en el Estadio Santiago Bernabeu"
-            title="Partido en el Estadio Santiago Bernabeu"
-            width="600"
-          />
+          <center>
+            <img
+              src="assets/images/santiago-bernabeu-elegido-como-mejor-estadio-mundo_98.webp"
+              alt="Partido en el Estadio Santiago Bernabeu"
+              title="Partido en el Estadio Santiago Bernabeu"
+              width="850"
+              height="350"
+            />
+          </center>
         </div>
       </div>
-      <aside>
-        <iframe
-          width="480"
-          height="300"
-          src="https://www.youtube.com/watch?v=8LGpMYcVWfw"
-          frameborder="0"
-          title="Youtube video player"
-        ></iframe>
-        <iframe
-          width="480"
-          height="300"
-          src="https://www.youtube.com/watch?v=vcol-88mK7w"
-          frameborder="0"
-        ></iframe>
-        <iframe
-          width="480"
-          height="300"
-          src="https://www.youtube.com/watch?v=aYjFliqVFzc"
-          frameborder="0"
-        ></iframe>
+    </main>
+    <aside>
+      <iframe
+        width="476"
+        height="300"
+        src="https://www.youtube.com/watch?v=8LGpMYcVWfw"
+        frameborder="0"
+        title="Youtube video player"
+      ></iframe>
+      <iframe
+        width="476"
+        height="300"
+        src="https://www.youtube.com/watch?v=vcol-88mK7w"
+        frameborder="0"
+        title="Youtube video player"
+      ></iframe>
+      <iframe
+        width="476"
+        height="300"
+        src="https://www.youtube.com/watch?v=aYjFliqVFzc"
+        frameborder="0"
+        title="Yutube video player"
+      ></iframe>
+      <center>
         <img
           src="assets/images/don santiago bernabeu.jpeg"
           alt="Frase de Don Santiago Bernabeu"
           width="700"
         />
-      </aside>
-    </main>
+      </center>
+    </aside>
+    <section>
+      <form
+        action="procesar.php"
+        method="POST"
+        enctype="application/x-www-form-urlencoded"
+        target="_blank"
+        name="hazte_socio"
+        style="background-color: white"
+      >
+        <h3>HAZTE SOCIO</h3>
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          style="background-color: gainsboro"
+        />
+        <br /><br />
+        <label for="apellidos">Apellidos:</label>
+        <input
+          type="text"
+          id="apellidos"
+          name="apellidos"
+          required
+          style="background-color: gainsboro"
+        />
+        <br /><br />
+        <label for="email">Correo Electrónico:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          required
+          style="background-color: gainsboro"
+        />
+        <br /><br />
+        <label for="sexo">Sexo:</label>
+        <select
+          name="sexo"
+          id="sexo"
+          required
+          style="background-color: gainsboro"
+        >
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+        <br /><br />
+        <label for="fechaNacimiento">Fecha de nacimineto:</label>
+        <input
+          type="date"
+          id="fechaNacimiento"
+          name="fechaNacimiento"
+          required
+          style="background-color: gainsboro"
+        />
+        <br /><br />
+        <input
+          type="submit"
+          value="Enviar"
+          style="background-color: gainsboro"
+        />
+      </form>
+    </section>
+    <footer>
+      <a href="https://www.instagram.com/fedevalverde/"></a>
+      <img
+        width="30"
+        height="30"
+        src="assets/images/instagram.png"
+        alt="instagram"
+        title="https://www.instagram.com/fedevalverde/"
+      />
+      <a href="https://x.com/danigallard0_"></a>
+      <img
+        width="30"
+        height="30"
+        src="assets/images/nuevo-vector-logotipo-twitter-x_768467-92.avif"
+        alt="twitter"
+        title="https://x.com/Dani10Gallardo"
+      />
+      <img
+        width="30"
+        height="30"
+        src="assets/images/correo-web-estilo-samurai-icono_1076610-104746.avif"
+        alt="correo"
+        title="dani10gallardo95@gmail.com"
+      />
+      <p style="color: white">
+        &copy; Daniel Gallardo 2024. Todos los derechos reservados.
+      </p>
+    </footer>
   </body>
 </html>
