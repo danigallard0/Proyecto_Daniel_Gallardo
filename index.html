@@ -15,13 +15,14 @@
     <!--header para un logo y un título principal.-->
     <header>
       <div class="logo">
-        <a href="#header"></a>
-        <img
-          src="assets/images/images.png"
-          alt="Escudo del Real Madrid"
-          width="130"
-          height="100"
-        />
+        <a href="#header">
+          <img
+            src="assets/images/images.png"
+            alt="Escudo del Real Madrid"
+            width="130"
+            height="100"
+          />
+        </a>
       </div>
       <h1 style="font-family: cursive">
         <font style="background-color: rgb(6, 60, 141)" color="white"
@@ -32,18 +33,15 @@
     <!--nav para una barra de navegación a diferentes bloques.-->
     <nav style="background-color: white">
       <ul>
-        <li name="quienes_somos">
-          ¿Quíenes somos?
-          <a href="#quienes_somos"></a>
-        </li>
-        <li name="experiencias">
-          Experiencias
-          <a href="#experiencias"></a>
-        </li>
-        <li name="hazte_socio">
-          Hazte SOCIO
-          <a href="#hazte_socio"></a>
-        </li>
+        <a href="#quienes_somos">
+          <li name="quienes_somos">¿Quienes somos?</li>
+        </a>
+        <a href="#experiencias">
+          <li name="experiencias">Experiencias</li>
+        </a>
+        <a href="#hazte_socio">
+          <li name="hazte_socio">Hazte SOCIO</li>
+        </a>
       </ul>
       <input
         type="search"
@@ -91,7 +89,7 @@
             src="assets/images/santiago-bernabeu-elegido-como-mejor-estadio-mundo_98.webp"
             alt="Partido en el Estadio Santiago Bernabeu"
             title="Partido en el Estadio Santiago Bernabeu"
-            width="850"
+            width="700"
             height="350"
           />
         </div>
@@ -100,22 +98,34 @@
     <!--aside para 3 videos de Youtube relacionados con el Real Madrid.-->
     <aside>
       <iframe
-        width="476"
+        width="474"
         height="300"
-        src="https://www.youtube.com/watch?v=8LGpMYcVWfw"
-        title="Youtube video player"
+        src="https://www.youtube.com/embed/8LGpMYcVWfw?si=7yY07zaH80KcYiq_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
       ></iframe>
       <iframe
-        width="476"
+        width="474"
         height="300"
-        src="https://www.youtube.com/watch?v=vcol-88mK7w"
-        title="Youtube video player"
+        src="https://www.youtube.com/embed/vcol-88mK7w?si=iOi5aAhn5-6VQYZJ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
       ></iframe>
       <iframe
-        width="476"
+        width="474"
         height="300"
-        src="https://www.youtube.com/watch?v=aYjFliqVFzc"
-        title="Yutube video player"
+        src="https://www.youtube.com/embed/aYjFliqVFzc?si=SF97Z0SIpToVqdU5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
       ></iframe>
       <img
         src="assets/images/don_santiago_bernabeu.jpeg"
@@ -126,6 +136,7 @@
     <!--section para crear un formulario.-->
     <section>
       <form
+        id="hazte_socio"
         action="procesar.php"
         method="POST"
         enctype="application/x-www-form-urlencoded"
@@ -154,7 +165,7 @@
         <br /><br />
         <label for="email">Correo Electrónico:</label>
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           required
@@ -168,6 +179,7 @@
           required
           style="background-color: gainsboro"
         >
+          <option value="" selected="selected">- Selecciona -</option>
           <option value="masculino">Masculino</option>
           <option value="femenino">Femenino</option>
           <option value="otro">Otro</option>
@@ -194,33 +206,37 @@
       <!--ul para meter dentro de la lista lo relacionado con las redes sociales y correo.-->
       <ul>
         <li name="Instagram">
-          <a href="https://www.instagram.com/danigallard0_/"></a>
-          <img
-            width="30"
-            height="30"
-            src="assets/images/instagram.png"
-            alt="instagram"
-            title="https://www.instagram.com/danigallard0_/"
-          />
+          <a href="https://www.instagram.com/danigallard0_/" target="_blank">
+            <img
+              width="30"
+              height="30"
+              src="assets/images/instagram.png"
+              alt="instagram"
+              title="https://www.instagram.com/danigallard0_/"
+            />
+          </a>
         </li>
         <li name="twitter">
-          <a href="https://x.com/Dani10Gallardo"></a>
-          <img
-            width="30"
-            height="30"
-            src="assets/images/nuevo-vector-logotipo-twitter-x_768467-92.avif"
-            alt="twitter"
-            title="https://x.com/Dani10Gallardo"
-          />
+          <a href="https://x.com/Dani10Gallardo" target="_blank">
+            <img
+              width="30"
+              height="30"
+              src="assets/images/nuevo-vector-logotipo-twitter-x_768467-92.avif"
+              alt="twitter"
+              title="https://x.com/Dani10Gallardo"
+            />
+          </a>
         </li>
         <li>
-          <img
-            width="30"
-            height="30"
-            src="assets/images/correo-web-estilo-samurai-icono_1076610-104746.avif"
-            alt="correo"
-            title="dani10gallardo95@gmail.com"
-          />
+          <a href="mailto:dani10gallardo95@gmail.com" target="_blank">
+            <img
+              width="30"
+              height="30"
+              src="assets/images/correo-web-estilo-samurai-icono_1076610-104746.avif"
+              alt="correo"
+              title="dani10gallardo95@gmail.com"
+            />
+          </a>
         </li>
       </ul>
       <p style="color: white">
