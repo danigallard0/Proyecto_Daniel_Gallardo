@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" style="background-color: rgb(6, 60, 141)">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
@@ -24,14 +24,10 @@
           />
         </a>
       </div>
-      <h1 style="font-family: cursive">
-        <font style="background-color: rgb(6, 60, 141)" color="white"
-          >PEÑA MADRIDISTA FEDE VALVERDE</font
-        >
-      </h1>
+      <h1>PEÑA MADRIDISTA FEDE VALVERDE</h1>
     </header>
     <!--nav para una barra de navegación a diferentes bloques.-->
-    <nav style="background-color: white">
+    <nav>
       <ul>
         <a href="#quienes_somos">
           <li name="quienes_somos">¿Quienes somos?</li>
@@ -43,11 +39,7 @@
           <li name="hazte_socio">Hazte SOCIO</li>
         </a>
       </ul>
-      <input
-        type="search"
-        placeholder="Buscar"
-        style="background-color: rgb(173, 171, 171)"
-      />
+      <input type="search" placeholder="Buscar" />
     </nav>
     <!--main para colocar un imagen y un bloque principal de información.-->
     <main>
@@ -59,31 +51,26 @@
       />
       <!--div para crear 2 bloques dentro; quienes_somos y experiencias y una imagen en el centro con center.-->
       <div class="content">
-        <div style="background-color: white" id="quienes_somos">
+        <div id="quienes_somos">
           <h3>¿QUIENES SOMOS?</h3>
-          <p
-            style="
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-                sans-serif;
-            "
-          >
+          <p>
             Somos una Peña Madridista fundada en 2023 con el nombre de nuestro
-            querido jugador Federico Valverde. Cada vez somos más socios lo que
+            querido jugador Federico Valverde. Cada vez somos más socios, lo que
             nos permite poder incrementar nuestras actividades y realizar viajes
             a ver partidos de nuestro Real Madrid tanto al Estadio Santiago
             Bernabeu, como a otros estadios de otros equipos de fútbol.
           </p>
         </div>
-        <div style="background-color: white" id="experiencias">
+        <div id="experiencias">
           <h3>EXPERIENCIAS</h3>
           <p>
             Hemos realizado varios viajes al Estadio Santiago Bernabeu para
             disfrutar de algunos partidos de fútbol, al igual que el año pasado
-            organizamos un viaje a Munich para la disputa del partido de ida de
+            organizamos un viaje a Múnich para la disputa del partido de ida de
             la Semifinal de Champions League que posteriormente ganaríamos en
-            Londres.Seguimos proponiendo viajes y actividades para llevar a cabo
-            entre todos los socios de la peña para poder disfrutar juntos de
-            nuestro Real Madrid.
+            Londres. Seguimos proponiendo viajes y actividades para llevar a
+            cabo entre todos los socios de la peña para poder disfrutar juntos
+            de nuestro Real Madrid.
           </p>
           <img
             src="assets/images/santiago-bernabeu-elegido-como-mejor-estadio-mundo_98.webp"
@@ -142,43 +129,19 @@
         enctype="application/x-www-form-urlencoded"
         target="_blank"
         name="hazte_socio"
-        style="background-color: white"
       >
         <h3>HAZTE SOCIO</h3>
         <label for="nombre">Nombre:</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          required
-          style="background-color: gainsboro"
-        />
+        <input type="text" id="nombre" name="nombre" required />
         <br /><br />
         <label for="apellidos">Apellidos:</label>
-        <input
-          type="text"
-          id="apellidos"
-          name="apellidos"
-          required
-          style="background-color: gainsboro"
-        />
+        <input type="text" id="apellidos" name="apellidos" required />
         <br /><br />
         <label for="email">Correo Electrónico:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          style="background-color: gainsboro"
-        />
+        <input type="email" id="email" name="email" required />
         <br /><br />
         <label for="sexo">Sexo:</label>
-        <select
-          name="sexo"
-          id="sexo"
-          required
-          style="background-color: gainsboro"
-        >
+        <select name="sexo" id="sexo" required>
           <option value="" selected="selected">- Selecciona -</option>
           <option value="masculino">Masculino</option>
           <option value="femenino">Femenino</option>
@@ -191,14 +154,9 @@
           id="fechaNacimiento"
           name="fechaNacimiento"
           required
-          style="background-color: gainsboro"
         />
         <br /><br />
-        <input
-          type="submit"
-          value="Enviar"
-          style="background-color: gainsboro"
-        />
+        <input type="submit" value="Enviar" />
       </form>
     </section>
     <!--footer de enlaces a redes sociales, correo y copyright.-->
@@ -239,9 +197,7 @@
           </a>
         </li>
       </ul>
-      <p style="color: white">
-        &copy; Daniel Gallardo 2024. Todos los derechos reservados.
-      </p>
+      <p>&copy; Daniel Gallardo 2024. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
